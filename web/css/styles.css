@@ -1,0 +1,166 @@
+
+/*
+  Wrapper for the enter page. This defines the page width
+  and centers content
+*/
+#wrap {
+	width: 80%;
+	margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+/*add some spacing*/
+#divider {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 20%;
+}
+
+img, .border-add {
+  border: 5px solid coral;
+  border-radius: 8px;
+}
+
+/*
+  Define font family and color for entire page
+*/
+html, body {
+  text-align: center;
+  font-family: courier;
+  color: white;
+  background-color: #1A1A1D;
+}
+
+p, nav {
+	padding: 2px;
+}
+
+.education {
+	text-align: left;
+	line-height: 0.5em;
+}
+
+/*
+  Media query to resize page
+*/
+@media only screen and (max-width: 531px) {
+	.education {
+		text-align: left;
+		line-height: 1em;
+	}
+}
+
+/*
+  This styling is for dynamically added
+  content from script.js so we have to
+  redefine the color and font-family despite the overall
+  html tag having it
+*/
+.text_chunk {
+	text-align: left;
+	font-size: 0.85em;
+	font-family: courier;
+	color: white;
+  padding: 3px;
+}
+
+.large_text_chunk {
+	text-align: left;
+	font-size: 1em;
+  padding: 3px;
+}
+
+/*
+  caption for each project containing an image
+*/
+figcaption {
+	font-size: 0.7em;
+	color: white;
+  padding: 10px;
+}
+
+/*Label for each project*/
+.project_label {
+	text-align: left;
+	font-size: 1em;
+}
+
+/*For the IIT college title*/
+.IIT {
+	color: red;
+	font-size: 1.2em;
+}
+
+/*For the Northwestern college title*/
+.NW {
+	color: purple;
+	font-size: 1.2em;
+}
+
+/*Color the links for external links*/
+.external-link {
+	color: #ff00ff;
+}
+
+/*
+  padding and alignment for list elements
+*/
+li {
+  text-align: left;
+  padding: 2px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.3em;
+	color: #10eaf0;
+}
+
+/*
+  Label for each project
+*/
+.section-label {
+  font-weight: bold;
+  font-size: 1em;
+	color: #10eaf0;
+}
+
+/*flex box to hold linkedin and github icons*/
+.holder {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.holder-child {
+  padding-right: 5%;
+}
+
+/*
+  red heading for section headers
+*/
+.red-header {
+	text-align: left;
+	color: red;
+}
+
+footer {
+  padding: 2em;
+}
+
+
+/*
+  Section divider: this is a horiztonal line
+*/
+hr {
+    display: block;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 2px;
+		border-color: #10eaf0;
+}

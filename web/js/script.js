@@ -92,7 +92,7 @@ function populate_projects(){
 */
 function create_description_tag(project){
 	let description = document.createElement("p");
-	description.setAttribute("class","text_chunk");
+	description.setAttribute("class","text-chunk");
 	description.innerHTML = project.description;
 	return description;
 
@@ -123,7 +123,7 @@ function create_list_tag(project_list){
 		}
 		else {
 			element = document.createElement("li");
-			element.setAttribute("class", "text_chunk");
+			element.setAttribute("class", "text-chunk");
 			element.innerHTML = project_list[i];
 		}
 		list_tag.appendChild(element);
@@ -178,18 +178,19 @@ function add_project(project) {
 
 	// add the link to the source code as a div tag
 	if ('github_link' in project) {
-		let a_tag = document.createElement("div");
+		let a_tag = document.createElement("a");
 		a_tag.innerHTML = "View the source code";
-		a_tag.setAttribute("class", "text_chunk external-link");
+		a_tag.appendChild(document.createElement("br"));
+		a_tag.setAttribute("class", "text-chunk external-link");
 		a_tag.setAttribute("href", project.github_link);
 		container.appendChild(a_tag);
 	}
 
 	// add the link to learn more about the project as a div tag
 	if ('learn_more_link' in project) {
-		let a_tag = document.createElement("div");
+		let a_tag = document.createElement("a");
 		a_tag.innerHTML = project.learn_more_link[0];
-		a_tag.setAttribute("class", "text_chunk external-link");
+		a_tag.setAttribute("class", "text-chunk external-link");
 		a_tag.setAttribute("href", project.learn_more_link[1]);
 		container.appendChild(a_tag);
 	}

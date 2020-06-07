@@ -57,7 +57,7 @@ p, nav {
   redefine the color and font-family despite the overall
   html tag having it
 */
-.text_chunk {
+.text-chunk {
 	text-align: left;
 	font-size: 0.85em;
 	font-family: courier;
@@ -65,7 +65,7 @@ p, nav {
   padding: 3px;
 }
 
-.large_text_chunk {
+.large-text-chunk {
 	text-align: left;
 	font-size: 1em;
   padding: 3px;
@@ -81,7 +81,7 @@ figcaption {
 }
 
 /*Label for each project*/
-.project_label {
+.project-label {
 	text-align: left;
 	font-size: 1em;
 }
@@ -101,6 +101,7 @@ figcaption {
 /*Color the links for external links*/
 .external-link {
 	color: #ff00ff;
+  text-align: left;
 }
 
 /*
